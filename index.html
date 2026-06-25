@@ -1,48 +1,23 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coin Flip 3D</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>CoinFlip Pro</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<div class="container">
-
-    <h1>Lancio della Moneta</h1>
-
-    <div class="scene">
-
-        <div class="shadow" id="shadow"></div>
-
-        <div class="coin" id="coin">
-
-            <div class="face front">
-                <span>TESTA</span>
-            </div>
-
-            <div class="edge"></div>
-
-            <div class="face back">
-                <span>CROCE</span>
-            </div>
-
-        </div>
-
-    </div>
-
-    <button id="flipBtn">
-        Lancia la moneta
-    </button>
-
-    <div id="result">
-        Premi il pulsante
-    </div>
-
+<div id="bg"></div>
+<div class="ui">
+<h1>CoinFlip Pro</h1>
+<div class="stats">
+<span>Testa: <b id="headsCount">0</b></span>
+<span>Croce: <b id="tailsCount">0</b></span>
+</div>
+<button id="flipBtn">Lancia la moneta</button>
+<div id="result">Pronto al lancio</div>
 </div>
 
-<script src="script.js"></script>
-
+<script type="module" src="js/app.js"></script>
 </body>
 </html>
